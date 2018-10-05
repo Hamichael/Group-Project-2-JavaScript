@@ -1,5 +1,0 @@
-Initial function prompts user to select num. of Minutes
-Create 2 functions based on user selection:
-	Function one counts from 0 up to num. of minutes selected
-	Function two counts from minutes selected down to 0
-Last function stop either function one or two when commanded

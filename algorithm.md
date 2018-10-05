@@ -20,5 +20,5 @@ Function Count Down: [Michael Ha]<br/>
 Decrements 1 second using setInterval(function, milliseconds). Runs Stop when it hits 0:00.<br/>
 Disables Set. Stops Count Up.<br/>
 <br/>
-Function Stop (button, boolean to pass to incrementing) [Grethel]:<br/>
+Function Stop [Grethel]:<br/>
 Stops Count Up/Down. Enables Set.<br/>

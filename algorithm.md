@@ -6,19 +6,19 @@ Last function stop either function one or two when commanded<br/>
 <br/>
 Psuedo Code<br/>
 <br/>
-Function Set: <br/>
+Function Set [Natalie]: <br/>
 After prompting for minutes, update field.<br/>
 Disabled if timer is counting up/down. Enabled if stopped.<br/>
 <br/>
-Function Count Up: <br/>
+Function Count Up: [Susana]<br/>
 Set timer to 0:00 and increments 1 second using setInterval(function, milliseconds).<br/>
 Disables Set. Stops Count Down.<br/>
 Use the following resource for help.<br/>
 https://www.w3schools.com/js/js_timing.asp<br/>
 <br/>
-Function Count Down:<br/>
+Function Count Down: [Michael Ha]<br/>
 Decrements 1 second using setInterval(function, milliseconds). Runs Stop when it hits 0:00.<br/>
 Disables Set. Stops Count Up.<br/>
 <br/>
-Function Stop (button, boolean to pass to incrementing):<br/>
+Function Stop (button, boolean to pass to incrementing) [Grethel]:<br/>
 Stops Count Up/Down. Enables Set.<br/>

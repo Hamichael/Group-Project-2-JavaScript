@@ -61,15 +61,38 @@ function convertSecs(str) {
 
     return s;
 }
-function set(minutes, seconds){
+function set1(minutes, seconds){
 	clearInterval(this.clock);
 	var seconds = "00";
 	var minutes = prompt("Please set time between 1 to 30 minutes: ");
 	if (minutes>30 || minutes<1){
-		prompt("Invalid quantity. Please select a time between 1 and 30 minutes: ");
+		minutes = prompt("Invalid quantity. Please select a time between 1 and 30 minutes: ");
 		document.getElementById("timer1").value = minutes +":"+seconds;
 	}
 	else
 		document.getElementById("timer1").value = minutes +":"+seconds;
+}
 
+function set2(minutes, seconds){
+	clearInterval(this.clock);
+	var seconds = "00";
+	var minutes = prompt("Please set time between 1 to 30 minutes: ");
+	if (minutes>30 || minutes<1){
+		minutes = prompt("Invalid quantity. Please select a time between 1 and 30 minutes: ");
+		document.getElementById("timer2").value = minutes +":"+seconds;
+	}
+	else
+		document.getElementById("timer2").value = minutes +":"+seconds;
+}
+
+function set3(minutes, seconds){
+	clearInterval(this.clock);
+	var seconds = "00";
+	var minutes = prompt("Please set time between 1 to 30 minutes: ");
+	if (minutes>30 || minutes<1){
+		minutes = prompt("Invalid quantity. Please select a time between 1 and 30 minutes: ");
+		document.getElementById("timer3").value = minutes +":"+seconds;
+	}
+	else
+		document.getElementById("timer3").value = minutes +":"+seconds;
 }

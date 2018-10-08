@@ -13,3 +13,6 @@ HTML and CSS						<br/>
 <b>Grethel</b>						<br/>
 Java Script implementation:			<br/>
 set()								<br/>
+
+<b>Natalie</b>
+Js validation

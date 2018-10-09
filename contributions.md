@@ -12,4 +12,6 @@ HTML and CSS						<br/>
 									<br/>
 <b>Grethel</b>						<br/>
 Java Script implementation:			<br/>
-set()								<br/>
+set()	<br/>
+<b> Natalie</b>
+Js validation

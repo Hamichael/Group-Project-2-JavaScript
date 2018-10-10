@@ -101,7 +101,7 @@ function countDown(duration, display, setButton, clock) {
 //setButton refers to the button to be enabled.
 //Clock refers to the clock variable to be disabled.
 function stop(setButton, clock) {
-	//console.log(clock.clock);
+	//console.log(clock);
 	setButton.disabled = false; 
 	clearInterval(clock.clock);
 }

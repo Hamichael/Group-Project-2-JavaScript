@@ -1,7 +1,3 @@
-let clock1;
-let clock2;
-let clock3;
-
 //Display is textbox.
 function set(display) {
 	let seconds = "00";
@@ -21,19 +17,20 @@ function set(display) {
 //Duration is timer listed.
 //Display is textbox.
 //setButton refers to the button to be disabled.
-//Clock using this.clock refers to the current clock variable in use.
+//Clock refers to the current clock variable in use.
 function countUp(duration, display, setButton, clock) {
 	setButton.disabled = true; 
-	clearInterval(this.clock);
+	clearInterval(clock.clock);
 	
 	//Get duration, use it as a stop point
 	length = duration;
-	console.log(length);
+	//console.log(length);
 	
 	let timer = 0, minutes, seconds;
 	display.value = "00:00";
     
-    this.clock = setInterval(function () {
+    clock.clock = setInterval(function () {
+
 		timer++;
 		// Converting Time
 		minutes = parseInt(timer / 60, 10)
@@ -47,6 +44,7 @@ function countUp(duration, display, setButton, clock) {
 		
 		//console.log(minutes + ":" + seconds);
 		//console.log(timer);
+		//console.log(clock);
 		
 		//Stop timer after the number set
 		if (timer >= length) {
@@ -59,13 +57,14 @@ function countUp(duration, display, setButton, clock) {
 //Duration is timer listed.
 //Display is textbox.
 //setButton refers to the button to be disabled.
-//Clock using this.clock refers to the current clock variable in use.
+//Clock refers to the current clock variable in use.
 function countDown(duration, display, setButton, clock) {
-	setButton.disabled = true; 
-	clearInterval(this.clock);
+	setButton.disabled = true;
+	clearInterval(clock.clock);
 	
     let timer = duration, minutes, seconds;
-    this.clock = setInterval(function () {
+    clock.clock = setInterval(function () {
+
 		timer--;
 		// Converting Time
 		minutes = parseInt(timer / 60, 10)
@@ -79,6 +78,7 @@ function countDown(duration, display, setButton, clock) {
 		
 		//console.log(minutes + ":" + seconds);
 		//console.log(timer);
+		//console.log(clock);
 		
 		//Stop timer when it hits 0
 		if (timer <= 0) {
@@ -89,10 +89,11 @@ function countDown(duration, display, setButton, clock) {
 }
 
 //setButton refers to the button to be enabled.
-//Clock using this.clock refers to the clock variable to be disabled.
+//Clock refers to the clock variable to be disabled.
 function stop(setButton, clock) {
+	//console.log(clock.clock);
 	setButton.disabled = false; 
-	clearInterval(this.clock);
+	clearInterval(clock.clock);
 }
 
 //Function to convert text clock format into seconds

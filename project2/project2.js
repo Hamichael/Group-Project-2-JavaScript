@@ -19,6 +19,11 @@ function set(display) {
 //setButton refers to the button to be disabled.
 //Clock refers to the current clock variable in use.
 function countUp(duration, display, setButton, clock) {
+	//Zero check
+	if (duration <= 0) {
+		return;
+	}
+	
 	setButton.disabled = true; 
 	clearInterval(clock.clock);
 	
@@ -59,10 +64,16 @@ function countUp(duration, display, setButton, clock) {
 //setButton refers to the button to be disabled.
 //Clock refers to the current clock variable in use.
 function countDown(duration, display, setButton, clock) {
+	//Zero check
+	if (duration <= 0) {
+		return;
+	}
+	
 	setButton.disabled = true;
 	clearInterval(clock.clock);
 	
     let timer = duration, minutes, seconds;
+	
     clock.clock = setInterval(function () {
 
 		timer--;

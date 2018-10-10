@@ -1,5 +1,5 @@
 //Display is textbox.
-function set(display) {
+function set(display, minDisplay) {
 	let seconds = "00";
 	let minutes = prompt("Please set time between 1 to 30 minutes: ");
 	if (minutes === null) {return;}//Returns on Cancel
@@ -12,6 +12,7 @@ function set(display) {
 	minutes = minutes < 10 ? "0" + minutes : minutes;
 	
 	display.value = minutes + ":" +seconds;
+	minDisplay.innerHTML = minutes;
 }
 
 //Duration is timer listed.

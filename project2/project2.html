@@ -19,25 +19,25 @@
 		
 		<!--Timer1-->
 		Timer 1:
-		<input id="timer1" type="text" value="00:00" disabled /> minutes
-		<button id="set1" class="set" onclick="set(timer1);">Set</button>
-		<button id="countUp1" class="countUp" onclick="countUp(convertSecs(timer1.value), timer1, set1, clock1);">Count Up</button>
+		<input id="timer1" type="text" value="00:00" disabled /> <ins id="min1">00</ins> minutes
+		<button id="set1" class="set" onclick="set(timer1, min1);">Set</button>
+		<button id="countUp1" class="countUp" onclick="countUp(convertSecs(min1.innerHTML + ':00'), timer1, set1, clock1);">Count Up</button>
 		<button id="countDown1" class="countDown" onclick="countDown(convertSecs(timer1.value), timer1, set1, clock1);">Count Down</button>
 		<button id="stop1" class="stop" onclick="stop(set1, clock1);">Stop</button>
 		
 		<!--Timer2--><br/>
 		Timer 2:
-		<input id="timer2" type="text" value="00:00" disabled /> minutes
-		<button id="set2" class="set" onclick="set(timer2);">Set</button>
-		<button id="countUp2" class="countUp" onclick="countUp(convertSecs(timer2.value), timer2, set2, clock2);">Count Up</button>
+		<input id="timer2" type="text" value="00:00" disabled /> <ins id="min2">00</ins> minutes
+		<button id="set2" class="set" onclick="set(timer2, min2);">Set</button>
+		<button id="countUp2" class="countUp" onclick="countUp(convertSecs(min2.innerHTML + ':00'), timer2, set2, clock2);">Count Up</button>
 		<button id="countDown2" class="countDown" onclick="countDown(convertSecs(timer2.value), timer2, set2, clock2);">Count Down</button>
 		<button id="stop2" class="stop" onclick="stop(set2, clock2);">Stop</button>
 		
 		<!--Timer3--><br/>
 		Timer 3:
-		<input id="timer3" type="text" value="00:00" disabled /> minutes
-		<button id="set3" class="set" onclick="set(timer3);">Set</button>
-		<button id="countUp3" class="countUp" onclick="countUp(convertSecs(timer3.value), timer3, set3, clock3);">Count Up</button>
+		<input id="timer3" type="text" value="00:00" disabled /> <ins id="min3">00</ins> minutes
+		<button id="set3" class="set" onclick="set(timer3, min3);">Set</button>
+		<button id="countUp3" class="countUp" onclick="countUp(convertSecs(min3.innerHTML + ':00'), timer3, set3, clock3);">Count Up</button>
 		<button id="countDown3" class="countDown" onclick="countDown(convertSecs(timer3.value), timer3, set3, clock3);">Count Down</button>
 		<button id="stop3" class="stop" onclick="stop(set3, clock3);">Stop</button>
 		

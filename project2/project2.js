@@ -28,8 +28,6 @@ function countUp(duration, display, setButton, clock) {
 	setButton.disabled = true; 
 	clearInterval(clock.clock);
 	
-	//Get duration, use it as a stop point
-	length = duration;
 	//console.log(length);
 	
 	let timer = 0, minutes, seconds;
@@ -39,7 +37,7 @@ function countUp(duration, display, setButton, clock) {
 
 		timer++;
 		// Converting Time
-		minutes = parseInt(timer / 60, 10)
+		minutes = parseInt(timer / 60, 10);
 		seconds = parseInt(timer % 60, 10);
 		
 		// Formatting
@@ -53,7 +51,7 @@ function countUp(duration, display, setButton, clock) {
 		//console.log(clock);
 		
 		//Stop timer after the number set
-		if (timer >= length) {
+		if (timer >= duration) {
 			stop(setButton, clock);
 		}
 		
@@ -79,7 +77,7 @@ function countDown(duration, display, setButton, clock) {
 
 		timer--;
 		// Converting Time
-		minutes = parseInt(timer / 60, 10)
+		minutes = parseInt(timer / 60, 10);
 		seconds = parseInt(timer % 60, 10);
 
 		// Formatting

@@ -30,6 +30,7 @@ function countUp(duration, display, setButton, clock) {
 	display.value = "00:00";
     
     clock.clock = setInterval(function () {
+
 		timer++;
 		// Converting Time
 		minutes = parseInt(timer / 60, 10)
@@ -63,6 +64,7 @@ function countDown(duration, display, setButton, clock) {
 	
     let timer = duration, minutes, seconds;
     clock.clock = setInterval(function () {
+
 		timer--;
 		// Converting Time
 		minutes = parseInt(timer / 60, 10)
